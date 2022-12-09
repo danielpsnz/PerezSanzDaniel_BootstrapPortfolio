@@ -1,8 +1,9 @@
 /*=============== Variables CSS ===============*/
 :root {
     --body-color: #777777;
-    --main-color: #256D7B;
+    --main-color: #5ebddd;
     --main-border-radius: 50px;
+    --bggradient: linear-gradient(90deg, #5d7cc4 0%, #096561 100%);
 }
 
 /*=============== General ===============*/
@@ -13,19 +14,13 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  html {
-    scroll-behavior: smooth;
-    font-size: 65%;
-    height: 100%;
+html {
+    scroll-behavior: smooth !important;
 }
 
 body {
-    background-color: var(--body-color);
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
 }
 
 ::-webkit-scrollbar {
@@ -54,53 +49,72 @@ h2 {
 /* Navigation SECTION */
 
 header {
-    position: fixed;
-    top: 0;
-    padding: 15px 80px;
-    width: 100%;
-    border-bottom: 1px solid rgba(144, 114, 126, 0.2);
-    opacity: 0.97;
-    z-index: 99;
-    background-color: var(--body-color);
+    background: var(--bggradient);
 }
 
-header nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+header a {
+    font-size: 0.9em;
+    color: whitesmoke;
 }
 
-.navbar-brand {
+header .navbar-brand {
+    padding-left: 8rem;
+    font-size: 1.8em;
     text-decoration: none;
-    font-size: 2.5rem;
-    font-family: "IBM Plex Sans", sans-serif;
-    color: #FAFAFA;
 }
 
-.navbar-nav {
-    list-style: none;
+header .nav-item {
+    padding: 1em;
 }
 
-.nav-link {
-    position: relative;
-    margin-right: 30px;
-    text-decoration: none;
-    font-size: 1.7rem;
-    font-weight: 400;
-    color: #cccccc;
-    outline: none;
+header .nav-link {
+    font-size: 1.2em;
+    background: white;
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s ease-out;
 }
 
-.nav-link::after {
-    position: relative;
-    top: 35px;
-    right: 0px;
-    height: 2px;
-    width: 100%;
+header .navbar-brand {
+    padding-left: 8rem;
+    font-size: 1.8em;
 }
 
-.nav-link:hover {
-    color: #FFF;
+header .nav-link:hover {
+    background-position: -100%;
+    transform: rotate(10deg);
+}
+
+header .row .col-md-7 {
+    padding: 22vmin 1vmin;
+    padding-bottom: 28vmin;
+    font-family: var(--Rubik);
+    color: whitesmoke;
+}
+  
+  header .row .col-md-5 {
+    padding: 4.2vmin 1vmin;
+}
+  
+  header .row .col-md-5 img {
+    width: 90%;
+}
+  
+  header .container .col-md-7 {
+    font-family: "Rubik", sans-serif;
+}
+  
+  header .container .col-md-7 h4 {
+    padding: 1vmin;
+    letter-spacing: 1.2px;
+}
+
+header .btn {
+    border-radius: 30px;
+    margin-top: 1em;
+    font-weight: bold;
 }
 
 /* Home section */
@@ -194,6 +208,10 @@ header nav{
     right: 35px;
     max-width: 38%;
     animation: moveUndraw 1.7s infinite alternate-reverse linear;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: var(--main-border-radius);
+    border: 1px solid #191919;
+    transition: border 1s ease;
 }
 
 /* About SECTION */

@@ -13,22 +13,25 @@
     <title> Portfolio website | Daniel Pérez Sanz </title>
 </head>
 
+<body>
+
 <!-- Navigation SECTION -->
 
-<body>
-<header>
+<header id="header">
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#home">Daniel Pérez Sanz</a>
+            <a class="navbar-brand" href="#home"> 
+               Daniel Pérez Sanz
+            </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#about">About me</a>
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#skills">Skills</a>
@@ -40,15 +43,39 @@
                     <a class="nav-link" href="#contact">Contact me</a>
                 </li>
                 </ul>
-
-                <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-
             </div>
         </div>
     </nav>
+
+    <div class="container text-left header-ctr">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-sm-12 header-text">
+            <h2><a class="typewrite" data-period="2000" data-type='[ "I am a Mathematics and Economics undergraduate.", "I am a Financial Modelling Analyst.", "I am learning Front-End Development." ]'>
+                <span class="wrap"></span>
+            </a></h2>
+  
+            <h1>Hello there! I am Daniel Pérez</h1>
+            <h4>
+              I am a Mathematics and Economics student at the University 
+              of York. I also study Physics at Universidad Nacional de 
+              Educación a Distancia (UNED), Spain.
+            </h4>
+  
+            <div class="text-left">
+              <a
+                class="button btn btn-light px-5 py-1.5"
+                href="mailto:dpdaniperezsanz@gmail.com?"
+                target="_top"
+                >Send me a message</a
+              >
+            </div>
+            <br />
+          </div>
+          <div class="col-md-5 col-sm-12 main-img h-25">
+            <img src="assets/images/iphone.png" alt="iphone image" />
+          </div>
+        </div>
+      </div>
 </header>
 
 <!-- Hero SECTION -->
