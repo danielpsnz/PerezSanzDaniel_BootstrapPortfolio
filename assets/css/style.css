@@ -287,55 +287,6 @@ header .navbar-nav {
     color: #000;
 }
 
-/*------- SECTION About ------*/
-
-.about {
-    display: flex;
-    justify-content: center;
-    padding: 70px 20px;
-    background-color: #191919;
-}
-
-.profile-about {
-    max-width: 340px;
-    margin-right: 8%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: var(--main-border-radius);
-    border: 1px solid #191919;
-    transition: border 1s ease;
-}
-
-.profile-about:hover {
-    border: 1px solid var(--main-color);
-}
-
-.article-about {
-    max-width: 630px;
-}
-
-.article-about h2{
-    margin-bottom: 20px;
-    color: #fafafa;
-    font-size: 4rem;
-    font-weight: 500;
-}
-
-.point {
-    color: var(--main-color);
-    font-size: 8rem;
-}
-
-.paragraph-about {
-    font-size: 1.8rem;
-    line-height: 3.2rem;
-    color: #cccccc;
-}
-
-.paragraph-about spam {
-    color: var(--main-color);
-    font-weight: 600;
-}
-
 /*------------ SECTION Skills -----------*/
 
 .skills {
@@ -401,6 +352,61 @@ header .navbar-nav {
 
 .card-skills img {
     min-width: 80px;
+}
+
+.json, .mysql, .nodejs, .react img {
+    height: 40%;
+    width: 40%;
+}
+
+
+/*------- SECTION About ------*/
+
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 70px 20px;
+    background-color: #191919;
+}
+
+.profile-about {
+    max-width: 340px;
+    margin-right: 8%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: var(--main-border-radius);
+    border: 1px solid #191919;
+    transition: border 1s ease;
+}
+
+.profile-about:hover {
+    border: 1px solid var(--main-color);
+}
+
+.article-about {
+    max-width: 630px;
+}
+
+.article-about h2{
+    margin-bottom: 20px;
+    color: #fafafa;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.point {
+    color: var(--main-color);
+    font-size: 8rem;
+}
+
+.paragraph-about {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: #cccccc;
+}
+
+.paragraph-about spam {
+    color: var(--main-color);
+    font-weight: 600;
 }
 
 /*------------ SECTION Contact -----------*/
