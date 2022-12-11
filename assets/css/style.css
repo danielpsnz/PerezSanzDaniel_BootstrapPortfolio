@@ -250,7 +250,7 @@ header .nav-link:hover {
     gap: 60px;
 }
 
-.card {
+.cards-project {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,7 +266,7 @@ header .nav-link:hover {
     text-decoration: none;
 }
 
-.card img {
+.cards-project img {
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
@@ -280,19 +280,26 @@ header .nav-link:hover {
     padding: 10px 5px 0 3px;
 }
 
-.card-body h5 {
+.project-info h4 {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--main-color);
 }
 
-.card-body p {
+.project-info p {
     margin-top: 20px;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.card-body a {
+.btns-project {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.btns-project a {
     padding: 10px 20px;
     margin-top: 10px;
     outline: none;
@@ -302,7 +309,7 @@ header .nav-link:hover {
     text-decoration: none;
 }
 
-.card-body a:hover {
+.btns-project a:hover {
     opacity: 0.8;
 }
 
