@@ -53,35 +53,41 @@ h2 {
 
 /*--=============== HEADER ===============--*/
 
-header {
+header{
     position: fixed;
-    top: 0;
-    padding: 15px 80px;
+    padding: 15px 40px;
     width: 100%;
     border-bottom: 1px solid rgba(144, 114, 126, 0.2);
-    opacity: 0.97;
-    z-index: 99;
     background-color: var(--body-color);
+    opacity: 0.95;
+    z-index: 99;
 }
 
-header nav{
+.navbar {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row;
+    margin: 0px 5%;
 }
 
-header .navbar-brand {
+.navbar-brand {
     text-decoration: none;
     font-size: 2.5rem;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #FAFAFA;
 }
 
-header .navbar-nav {
-    list-style: none;
+.container-fluid {
+    display: flex;
+    width: 100%;
+    align-items:center;
+    justify-content: space-between;
 }
 
-.nav-link {
+header .nav-item {
+    display: inline-block;
+}
+
+header .nav-link {
     position: relative;
     margin-right: 30px;
     text-decoration: none;
@@ -99,8 +105,27 @@ header .navbar-nav {
     width: 100%;
 }
 
-.nav-link:hover {
+header .nav-link:hover {
     color: #FFF;
+}
+
+.btn-primary {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: block;
+    max-width: 200px;    
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #FAFAFA;
+    color: #FAFAFA;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.6rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #FAFAFA;
+    color: black;
 }
 
 /*=============== Main ===============*/
@@ -352,11 +377,6 @@ header .navbar-nav {
 
 .card-skills img {
     min-width: 80px;
-}
-
-.json, .mysql, .nodejs, .react img {
-    height: 40%;
-    width: 40%;
 }
 
 
