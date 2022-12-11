@@ -1,262 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <title> Portfolio website | Daniel Pérez Sanz </title>
+  <title> Portfolio website | Daniel Pérez Sanz </title>
 </head>
 
 <body>
 
-<!-- Navigation SECTION -->
-
-<header id="header">
+  <!--=============== Header ===============-->
+  <header>
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#home"> 
-               Daniel Pérez Sanz
-            </a>
+      <div class="container-fluid">
+        <h1><a class="navbar-brand" href="#home">Daniel Pérez Sanz</a></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#contact">Contact me</a>
+            </li>
+          </ul>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">About me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact me</a>
-                </li>
-                </ul>
-            </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
+
+      </div>
     </nav>
 
-    <div class="container text-left header-ctr">
-        <div class="row d-flex align-items-center">
-          <div class="col-md-7 col-sm-12 header-text">
-            <h2><a class="typewrite" data-period="2000" data-type='[ "I am a Mathematics and Economics undergraduate.", "I am a Financial Modelling Analyst.", "I am learning Front-End Development." ]'>
-                <span class="wrap"></span>
-            </a></h2>
-  
-            <h1>Hello there! I am Daniel Pérez</h1>
-            <h4>
-              I am a Mathematics and Economics student at the University 
-              of York. I also study Physics at Universidad Nacional de 
-              Educación a Distancia (UNED), Spain.
-            </h4>
-  
-            <div class="text-left">
-              <a
-                class="button btn btn-light px-5 py-1.5"
-                href="mailto:dpdaniperezsanz@gmail.com?"
-                target="_top"
-                >Send me a message</a
-              >
-            </div>
-            <br />
-          </div>
-          <div class="col-md-5 col-sm-12 main-img h-25">
-            <img src="assets/images/iphone.png" alt="iphone image" />
-          </div>
-        </div>
-      </div>
-</header>
+        <!--=============== Main ===============-->
+        <main class="main">
+            <!--=============== Home ===============-->
+            <section class="home" id="home"> 
+                <article class="article-home">
+                    <spam class="spam-home">Hello there, my name is</spam>
+                    <h1>
+                        <spam>Da</spam>niel<spam> Pé</spam>rez
+                    </h1>
+                    <p id="typeWriter">I am a Front-End Developer.</p>
+                    <div class="buttons-home">
+                        <a class="get-in-touch" href="#contact">Contact me</a>
+                        <a class="cv-download" href="./Primary Resume.pdf">Resumé</a>
+                    </div>
+                </article>
 
-<!-- Hero SECTION -->
+                <img class="img-home" src="assets/images/IMG_7366.jpeg" alt="photo of me">
+            </section>
+            <!--=============== About ===============-->
+            <section class="about" id="about">
+                <img class="profile-about" src="assets/images/IMG_9963.jpeg" alt="another photo of me">
 
-<main class="main">
-<section class="home" id="home"> 
-    <div class="jumbotron">
-        <spam class="spam-home">Hello there, my name is</spam>
-            <h1>
-                <spam>Da</spam>niel<spam> Pé</spam>rez
-            </h1>
-            <p id="typeWriter">I am a Front-End Developer.</p>
-        <a class="btn btn-primary btn-lg" href="#contact" role="button">Contact me</a>
-        <a class="btn btn-secondary btn-lg" href="assets/Primary Resume.pdf" role="button">Resumé</a>
-    </div>
-
-    <img class="img-home" src="assets/images/IMG_7366.jpeg" alt="photo of me">
-</section>
-
-<!--=============== About ===============-->
-<section class="about" id="about">
-    <img class="profile-about" src="assets/images/IMG_9963.jpeg" alt="another photo of me">
-
-    <article class="article-about">
-    <h2>About me <spam class="point">.</spam>
-    </h2>
-    <p class="paragraph-about">
-        I am a final year Mathematics and Economics student at the University of 
-        York. Last year, I did a placement at the Ministry of Justice working as a 
-        statistician and, because of that, I have experience with R, Python and SAS
-        programming. I am currently doing a <spam>front-end development</spam> bootcamp
-        to boost my career. I have also completed a financial modelling certification by
-        the Corporate Finance Institute and have the ability to speak Spanish, English 
-        and French at a professional level.
-    </p>
-</article>  
-</section>
-
-<!-- Work SECTION -->
-
-<section class="projects" id="projects">
-    <h2 class="title-projects">Projects <spam class="point">.</spam></h2>
-
-<!--grid-->
-<div class="container text-center">
-    <div class="row">
-      <div class="col-sm-8">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/furniture.png" alt="Furniture enterprise image">
-            <div class="card-body">
-              <h5 class="card-title">Furniture enterprise webpage</h5>
-              <p class="card-text">Project in which I had to create a website for a fictious enterprise
-                to practise my skills.</p>
-              <a href="#" class="btn btn-primary">View live</a>
-              <a href="#" class="btn btn-secondary">View GitHub Repository</a>
-            </div>
-          </div>
-      </div>
-
-      <div class="col-sm-4">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/alda.png" alt="Alda image">
-            <div class="card-body">
-              <h5 class="card-title">Alda English</h5>
-              <p class="card-text">The objective is to create a website to help foreign english speakers to 
-                improve their English. Although it is not finished yet, here is a photo
-                of it. </p>
-              <a href="#" class="btn btn-primary">View live</a>
-              <a href="#" class="btn btn-secondary">View GitHub Repository</a>
-            </div>
-          </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-      </div>
-
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-      </div>
-
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-      </div>
-    </div>
-  </div>
+                <article class="article-about">
+                <h2>About me <spam class="point">.</spam>
+                </h2>
+                <p class="paragraph-about">
+                    I am a final year Mathematics and Economics student at the University of 
+                    York. Last year, I did a placement at the Ministry of Justice working as a 
+                    statistician and, because of that, I have experience with R, Python and SAS
+                    programming. I am currently doing a <spam>front-end development</spam> bootcamp
+                    to boost my career. I have also completed a financial modelling certification by
+                    the Corporate Finance Institute and have the ability to speak Spanish, English 
+                    and French at a professional level.
+                </p>
+            </article>  
+            </section>
+            <!--=============== Skills ===============-->
+            <section class="skills" id="skills">
+                <article class="article-skills">
+                    <h2 class="title-skills">Skills <spam class="point">.</spam></h2>
+                    <spam class="card-name"></spam>
+                    <p id="info-skills">* Place your cursor in one icon to know more about it. *
+                </article>
     
-</section>
+                <div class="grid-skills">
+                    <div class="card-skills html">
+                        <img src="assets/icons/icons8-html-5.svg" alt="html icon">
+                    </div>
 
-<!-- Skills SECTION -->
-<section class="skills" id="skills">
-    <article class="article-skills">
-        <h2 class="title-skills">Skills <spam class="point">.</spam></h2>
-        <spam class="card-name"></spam>
-        <p id="info-skills">* Place your cursor in one icon to know more about it. *
-    </article>
+                    <div class="card-skills css">
+                        <img src="assets/icons/icons8-css3.svg" alt="css icon">
+                    </div>
+    
+                    <div class="card-skills js">
+                        <img src="assets/icons/icons8-javascript.svg" alt="javascript icon">
+                    </div>
+    
+                    <div class="card-skills git">
+                        <img src="assets/icons/icons8-git.svg" alt="git icon"/>
+                    </div>
+                </div>
+            </section>
+            <!--=============== Projects ===============-->
+            <section class="projects" id="projects">
+                <h2 class="title-projects">Projects <spam class="point">.</spam>
+                </h2>
+    
+                <div class="container-projects">
+                    <div class="row-1">
 
-    <div class="grid-skills">
-        <div class="card-skills html">
-            <img src="assets/icons/icons8-html-5.svg" alt="html icon">
-        </div>
+                        <div class="cards-project">
+                            <img src="assets/images/furniture.png" alt="furniture website">
+                            <div class="project-info">
+                                <h4>Furniture enterprise webpage</h4>
+                                <p> Project in which I had to create a website for a fictious enterprise
+                                    to practise my skills.
+                                </p>
+                                <div class="btns-project">
+                                    <a class="view-live" href="assets/furniture/index.html"
+                                        target="_blank">View Live</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="cards-project">
+                            <img src="assets/images/alda.png" alt="alda website">
+                            <div class="project-info">
+                                <h4>Personal project</h4>
+                                <p>The objective is to create a website to help foreign english speakers to 
+                                    improve their English. Although it is not finished yet, here is a photo
+                                    of it. 
+                                </p>
+                            </div>
+                        </div>
 
-        <div class="card-skills css">
-            <img src="assets/icons/icons8-css3.svg" alt="css icon">
-        </div>
+                    </div>
+                </div>
+            </section>
+            <!--=============== CONTACT ===============-->
+            <section class="contact" id="contact">
+                <article class="article-contact">
 
-        <div class="card-skills js">
-            <img src="assets/icons/icons8-javascript.svg" alt="javascript icon">
-        </div>
+                    <h2 class="title-contact">
+                        Contact me <spam class="point">.</spam>
+                    </h2>
+    
+                    <div class="social-links">
+                        <a href="https://github.com/danielpsnz"><img src="assets/icons/github.png" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/danielpsnz/"><img src="assets/icons/icons8-linkedin-circled.gif" alt="LinkedIn"></a>
+                        <a href="https://twitter.com/danielpsnz"><img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter"></a>
+                        <a href="https://instagram.com/danielpsnz"><img src="assets/icons/icons8-instagram.gif" alt="Instagram"></a>
+                    </div>
+                </article>
 
-        <div class="card-skills git">
-            <img src="assets/icons/icons8-git.svg" alt="git icon"/>
-        </div>
-    </div>
-</section>
+                <form action="https://formsubmit.co/dpdaniperezsanz@gmail.com" method="POST" class="form">
+                    <label>
+                        <input type="text" name="Name" placeholder="Write your name..." required autocomplete>
+                    </label>
+    
+                    <label>
+                        <input type="email" name="Email" placeholder="youremail@gmail.com" required autocomplete="">
+                    </label>
+    
+                    <label>
+                        <textarea name="Message" placeholder="Write your message..."></textarea>
+                    </label>
+    
+                    <input type="hidden" name="_captcha" value="false">
+    
+                    <button type="submit">
+                        Send
+                    </button>
+                </form>
+            </section>
+        </main>
 
-<!--=============== CONTACT ===============-->
-<section class="contact" id="contact">
-    <article class="article-contact">
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <a href="#">Back To Top</a>
+        </footer>
 
-        <h2 class="title-contact">
-            Contact me <spam class="point">.</spam>
-        </h2>
-
-        <div class="social-links">
-            <a href="https://github.com/danielpsnz"><img src="assets/icons/github.png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/danielpsnz/"><img src="assets/icons/icons8-linkedin-circled.gif" alt="LinkedIn"></a>
-            <a href="https://twitter.com/danielpsnz"><img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter"></a>
-            <a href="https://instagram.com/danielpsnz"><img src="assets/icons/icons8-instagram.gif" alt="Instagram"></a>
-        </div>
-    </article>
-
-    <form action="https://formsubmit.co/dpdaniperezsanz@gmail.com" method="POST" class="form">
-        <label>
-            <input type="text" name="Name" placeholder="Write your name..." required autocomplete>
-        </label>
-
-        <label>
-            <input type="email" name="Email" placeholder="youremail@gmail.com" required autocomplete="">
-        </label>
-
-        <label>
-            <textarea name="Message" placeholder="Write your message..."></textarea>
-        </label>
-
-        <input type="hidden" name="_captcha" value="false">
-
-        <button type="submit">
-            Send
-        </button>
-    </form>
-</section>
-</main>
-
-<!-- Footer SECTION -->
-<footer class="footer">
-    <a href="#">Back To Top</a>
-</footer>
-
-</body>
+        <script src="assets/js/clickskill.js"></script>
+        <script src="assets/js/typing.js"></script>
+    </body>
 </html>
