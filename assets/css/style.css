@@ -76,7 +76,7 @@ header{
     color: #FAFAFA;
 }
 
-.container-fluid {
+header .container-fluid {
     display: flex;
     width: 100%;
     align-items:center;
@@ -110,7 +110,6 @@ header .nav-link:hover {
 }
 
 .btn-primary {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     display: block;
     max-width: 200px;    
     padding: 15px;
@@ -126,6 +125,7 @@ header .nav-link:hover {
 .btn:hover {
     background-color: #FAFAFA;
     color: black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 /*=============== Main ===============*/
@@ -192,6 +192,7 @@ header .nav-link:hover {
 .get-in-touch:hover {
     background-color: #FAFAFA;
     color: black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .cv-download {
@@ -210,6 +211,7 @@ header .nav-link:hover {
 .cv-download:hover {
     background-color: var(--main-color);
     color: #000;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .img-home {
@@ -309,6 +311,7 @@ header .nav-link:hover {
 
 .btns-project a:hover {
     opacity: 0.8;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .view-live, .github-repo {
@@ -378,6 +381,7 @@ header .nav-link:hover {
 
 .card-skills:hover {
     border: 1px solid white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .card-skills img {
@@ -471,6 +475,7 @@ header .nav-link:hover {
 
 .social-links img:hover {
     transform: scale(1.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 
@@ -530,6 +535,7 @@ header .nav-link:hover {
 
 .form button:hover {
     filter: brightness(0.90)
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 /*---------------------- FOOTER -------------------------*/

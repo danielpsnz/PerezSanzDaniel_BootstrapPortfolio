@@ -7,26 +7,6 @@
   
         - Links should navigate to the appropriate sections 
 
-    - A work section
-
-      - A section displaying your work in grid. 
-
-        - If you need to use placeholder image use: https://placehold.co/ 
-
-      - Use bootstrap cards for each project.
-
-        - The description should give a brief overview of the work.
-
-      - Each project will eventually link to your class project work!
-    
-    - A footer section.
-
-      - All hyperlinks should have a hover effect.
-
-      - All buttons should display a box shadow upon hover.
-
-6. Deploy your new Bootstrap-powered portfolio to GitHub Pages.
-
 
 ## Grading Requirements
 
