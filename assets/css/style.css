@@ -235,19 +235,17 @@ header .nav-link:hover {
     color: #fafafa;
 }
 
-.container-projects {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-    margin-top: 50px;
-    padding: 0 20px;
-}
-
-.row-1 {
+.container-fluid {
+    width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
+    align-items: center;
+
+}
+
+.row {
+    display: flex;
+    column-gap: 15px;
 }
 
 .cards-project {
@@ -313,7 +311,7 @@ header .nav-link:hover {
     opacity: 0.8;
 }
 
-.view-live {
+.view-live, .github-repo {
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
     color: #000;
